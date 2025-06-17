@@ -27,11 +27,24 @@
     flex-direction: column;
 }
 
+.product-card--flat .product-card__wrapper {
+    flex-direction: row;
+    gap: 60px;
+
+}
+
 .product-card__heading {
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 0 0 25px;
+}
+
+.product-card--flat .product-card__heading {
+    width: 50%;
+    flex-direction: column;
+    margin: 0;
+    gap: 30px;
 }
 
 .product-card__img {
@@ -40,12 +53,23 @@
     border-radius: 0 130px 0 130px;
 }
 
+.product-card--flat .product-card__img {
+    width: 100%;
+    height: 259px;
+    border-radius: 0 170px 0 170px;
+}
+
 .product-card__name {
     font-weight: 400;
     font-size: 16px;
-    line-height: 20;
+    line-height: 20px;
     font-style: italic;
     color: #475009;
+}
+
+.product-card--flat .product-card__name {
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .product-card__info-wrapper {
@@ -54,11 +78,23 @@
     height: 100%;
 }
 
+.product-card--flat .product-card__info-wrapper {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 50px 0 50px 0;
+}
+
 .product-card__description {
     font-size: 14px;
     line-height: 18px;
     margin: 0 0 25px;
     color: #475009;
+}
+.product-card--flat .product-card__description {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 35px;
 }
 
 .product-card__info {
@@ -68,6 +104,11 @@
     margin: auto 0 0;
 }
 
+ .product-card--flat .product-card__info {
+    background-color: unset;
+     padding: 0;
+}
+
 .product-card__care {
     display: flex;
     justify-content: space-between;
@@ -75,9 +116,12 @@
     margin: 0 0 20px;
 }
 
+.product-card--flat .product-card__care {
+    margin: 0 0 40px;
+}
+
 .product-card__care-group--right {
     text-align: right;
-
 }
 
 .product-card__care-condition {
@@ -89,6 +133,11 @@
     margin: 0 0 5px;
 }
 
+.product-card--flat .product-card__care-condition {
+    font-size: 18px;
+    line-height: 18px;
+}
+
 .product-card__care-value {
     display: block;
     font-size: 12px;
@@ -96,10 +145,20 @@
     color: #475009;
 }
 
+
+.product-card--flat .product-card__care-value {
+    font-size: 16px;
+    line-height: 16px;
+}
+
 .product-card__links {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+.product-card--flat .product-card__links {
+    gap: 30px;
 }
 
 .product-card__link {
@@ -113,6 +172,7 @@
     padding: 14px;
     width: 50%;
 }
+
 .product-card__link--secondary {
     background-color: unset;
     color: #475009;
