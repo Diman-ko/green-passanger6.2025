@@ -1,5 +1,5 @@
 .products {
-    margin: 0;
+    margin: 0 0 70px;
     padding: 0;
     list-style: none;
     display: flex;
@@ -7,6 +7,14 @@
     gap: 70px 30px;
 }
 
+.products-flat {
+    gap: 70px;
+}
+
 .products__item {
     width: calc(33.33% - (60px / 3));
+}
+
+.products--flat .products__item {
+    width: 100%;
 }

@@ -8,6 +8,10 @@
     flex-direction: column;
 }
 
+.product-card--flat {
+    padding: 25px 70px 40px;
+}
+
 .product-card__title {
     font-weight: 700;
     font-size: 40px;
